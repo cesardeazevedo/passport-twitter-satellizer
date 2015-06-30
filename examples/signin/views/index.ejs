@@ -1,5 +1,22 @@
-<% if (!user) { %>
-	<h2>Welcome! Please log in.</h2>
-<% } else { %>
-	<h2>Hello, <%= user.username %>.</h2>
-<% } %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passport-Twitter Example with Satellizer</title>
+        <script src="components/angular/angular.min.js"></script>
+        <script src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src='components/satellizer/satellizer.js'></script>
+        <script src='js/app.js'></script>
+    </head>
+    <body ng-app="MyApp">
+        <div ng-controller='AppController'>
+            <a href="/">Home</a> | 
+            <a href="#" ng-click="logout()">Log Out</a>
+            <h3>Please Login</h3>
+            <a ng-click="authenticate('twitter')">
+                <img src="sign-in-with-twitter-l.png" width="151" height="24">
+            </a>
+            <h2 ng-if="isAuthenticated()">Hello, {{ username }}.</h2>
+        </div>
+	</body>
+</html>
+

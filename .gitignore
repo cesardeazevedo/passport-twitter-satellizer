@@ -3,6 +3,8 @@ reports/
 
 # Node.js
 node_modules/
+examples/signin/node_modules/
+examples/signin/public/components/
 npm-debug.log
 
 # Mac OS X
