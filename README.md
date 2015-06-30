@@ -19,11 +19,11 @@ unobtrusively integrated into any application or framework that supports
 
 > Added an example to show a passport-twitter with [Satellizer]() client authentication.
 
-`$ cd example/signin`
+`$ cd examples/signin`
 
 `$ npm install & bower install`
 
-Set yours secrets on `example/sigin/app.js` file.
+Set yours secrets on `examples/signin/app.js` file.
 
 `$ npm start`
 
