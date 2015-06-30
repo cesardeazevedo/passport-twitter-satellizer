@@ -1,11 +1,10 @@
-# passport-twitter
+# passport-twitter-satellizer
 
 [![Build](https://travis-ci.org/jaredhanson/passport-twitter.svg?branch=master)](https://travis-ci.org/jaredhanson/passport-twitter)
 [![Coverage](https://coveralls.io/repos/jaredhanson/passport-twitter/badge.svg?branch=master)](https://coveralls.io/r/jaredhanson/passport-twitter)
 [![Quality](https://codeclimate.com/github/jaredhanson/passport-twitter/badges/gpa.svg)](https://codeclimate.com/github/jaredhanson/passport-twitter)
 [![Dependencies](https://david-dm.org/jaredhanson/passport-twitter.svg)](https://david-dm.org/jaredhanson/passport-twitter)
 [![Tips](https://img.shields.io/gratipay/jaredhanson.svg)](https://gratipay.com/jaredhanson/)
-
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Twitter](http://twitter.com/)
 using the OAuth 1.0a API.
@@ -15,6 +14,18 @@ By plugging into Passport, Twitter authentication can be easily and
 unobtrusively integrated into any application or framework that supports
 [Connect](http://www.senchalabs.org/connect/)-style middleware, including
 [Express](http://expressjs.com/).
+
+## Fork
+
+> Added an example to show a passport-twitter with [Satellizer]() client authentication.
+
+`$ cd example/signin`
+
+`$ npm install & bower install`
+
+Set yours secrets on `example/sigin/app.js` file.
+
+`$ npm start`
 
 ## Install
 
